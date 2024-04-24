@@ -14,23 +14,37 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Instructions for Testing the Video Creation Component
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This document provides detailed instructions for QA to perform testing on the video creation component. The component should be tested against the following requirements:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Character Limits on Video Name and Description**: The video name and description should have defined character limits. The test should verify if these limits are being applied correctly.
 
-## Learn More
+2. **Time and Size Limits of the Video**: The component should include validations for the time and size of the video. The test should ensure that these validations are working correctly.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Data Verification in React Hook Form**: The test should ensure that all data entered in the form is correctly managed by React Hook Form.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Form Completion Verification**: Upon clicking "Submit" (or equivalent), the test should verify if all mandatory fields are filled before allowing the form submission.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Steps for Test Execution
 
-## Deploy on Vercel
+1. **Environment Setup**:
+   - Clone this repository to your local machine.
+   - Ensure that Node.js and npm are installed on your system.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Dependency Installation**:
+   - In the root directory of the project, run the command `npm install` to install all necessary dependencies.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Running Tests**:
+   - Open the terminal in the root directory of the project.
+   - Run the command `npm run test` to start end-to-end tests with Cypress.
+
+4. **Analyzing Results**:
+   - After the tests are completed, review the results to ensure that all functionalities are working as expected.
+   - Verify that all requirements have been tested and there are no failures or errors in the tests.
+
+## Important Notes
+
+- Ensure to thoroughly review and understand the requirements of the video creation component before executing the tests.
+- If necessary, refer to the documentation and source code files of the project for additional information on the implementation of the component.
+- If you encounter any issues during testing or have any questions, feel free to reach out to the development team for further support.
