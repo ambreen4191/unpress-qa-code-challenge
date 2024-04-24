@@ -17,20 +17,28 @@ This document provides detailed instructions for QA to perform testing on the vi
 
 ## Steps for Test Execution
 
-1. **Environment Setup**:
-   - Clone this repository to your local machine.
+1. **Forking the Repository**:
+   - Click on the "Fork" button at the top right corner of the page. This will create a copy of the repository in your GitHub account.
+
+2. **Environment Setup**:
+   - Clone your fork to your local machine.
    - Ensure that Node.js and npm are installed on your system.
 
-2. **Dependency Installation**:
+3. **Dependency Installation**:
    - In the root directory of the project, run the command `npm install` to install all necessary dependencies.
 
-3. **Running Tests**:
+4. **Running Tests**:
    - Open the terminal in the root directory of the project.
    - Run the command `npm run test` to start end-to-end tests with Cypress.
 
-4. **Analyzing Results**:
+5. **Analyzing Results**:
    - After the tests are completed, review the results to ensure that all functionalities are working as expected.
    - Verify that all requirements have been tested and there are no failures or errors in the tests.
+
+6. **Sharing Your Fork**:
+   - Push your changes to your forked repository on GitHub.
+   - Make your repository public so it can be accessed by others.
+   - Send the link of your public repository to **alisson.blaas@unpress.news**
 
 ## Important Notes
 
