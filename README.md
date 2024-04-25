@@ -29,7 +29,7 @@ This document provides detailed instructions for QA to perform testing on the vi
 
 4. **Running Tests**:
    - Open the terminal in the root directory of the project.
-   - Run the command `npm run test` to start end-to-end tests with Cypress.
+   - Run the command `npm run test` to start unit tests with Jest.
 
 5. **Analyzing Results**:
    - After the tests are completed, review the results to ensure that all functionalities are working as expected.
