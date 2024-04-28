@@ -65,6 +65,7 @@ export default function Home() {
                 />
                 <TextField
                     {...register('video')}
+                    label="Video"
                     type="file"
                     fullWidth
                     error={!!errors.video}
